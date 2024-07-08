@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Test">
+    <classes>
+      <class name="link.MA_BrokenLink_A_C"/>
+      <class name="link.MA_BrokenLink_D_TO_M"/>
+      <class name="link.MA_BrokenLink_I_To_Z"/>
+     
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
