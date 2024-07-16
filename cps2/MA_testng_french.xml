@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-     
+		
+		<class name="link.French_MA_BrokenLink_A_to_C"/>
       <class name="link.French_MA_BrokenLink_D_To_K"/>
-      <class name="link.French_MA_BrokenLink_A_to_C"/>
       <class name="link.French_MA_BrokenLink_K_to_R"/>
       <class name="link.French_MA_BrokenLink_R_to_Z"/>
      

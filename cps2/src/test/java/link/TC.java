@@ -44,16 +44,14 @@ public class TC {
 
 		WebDriverManager.chromedriver().setup();
 
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless"); // Enable headless mode
-
-		driver = new ChromeDriver(options);
-
+		
 		driver = WebDriverManager.chromedriver().create();
 
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
 		wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+		
+
 	}
 
 	@Test
@@ -66,6 +64,7 @@ public class TC {
 		driver.findElement(By.id("password")).sendKeys("Tester1-etpc");
 
 		driver.manage().window().maximize();
+		
 
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type=\"submit\"]")));
 
@@ -79,7 +78,7 @@ public class TC {
 
 		driver.findElement(By.xpath("//div[@class='globalNav-menu']/ul/li[1]/ul/li[8]")).click();
 
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		// 
 
 		List<WebElement> all_items = driver.findElements(By.xpath("//div[@class=\"menu-document-item\"]/span/a"));
@@ -109,7 +108,7 @@ public class TC {
 
 			current_element.click();
 
-			Thread.sleep(500);
+			Thread.sleep(1500);
 
 			List<WebElement> allLinks = driver.findElements(By.tagName("a"));
 
@@ -142,7 +141,7 @@ public class TC {
 							} catch(SocketException se)
 							{
 								attempts++;
-								Thread.sleep(1000); // Wait for 2 seconds before retrying
+								Thread.sleep(1500); // Wait for 2 seconds before retrying
 								continue;
 							} catch(Exception e) {
 								test.log(Status.FAIL, text + " link is not working and throwing exception: " + e.getMessage());
