@@ -78,7 +78,7 @@
         <version>3.0.0-M5</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>TC_testng_english.xml</suiteXmlFile>
+            <suiteXmlFile>french_MA_DK.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>

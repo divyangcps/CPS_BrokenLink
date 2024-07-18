@@ -34,7 +34,7 @@ public class French_MA_BrokenLink_A_to_C {
 	public void setUp() {
 		extent = new ExtentReports();
 
-		ExtentSparkReporter spark = new ExtentSparkReporter("French_MA_A_To_C.html");
+		ExtentSparkReporter spark = new ExtentSparkReporter("French_MA_AC.html");
 
 		extent.attachReporter(spark);
 
